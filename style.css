@@ -106,6 +106,30 @@ h2 {
   margin-top: 0;
 }
 
+.ta-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.ta-image img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(40, 36, 26, 0.15);
+  display: block;
+}
+
+.ta-content p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 760px) {
   .page {
     margin: 24px auto;
@@ -119,5 +143,14 @@ h2 {
 
   .avatar {
     width: 130px;
+  }
+
+  .ta-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ta-image img {
+    max-width: 100%;
   }
 }
