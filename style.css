@@ -108,17 +108,23 @@ h2 {
 
 .ta-section {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(180px, 320px) 1fr;
   gap: 24px;
-  align-items: center;
+  align-items: start;
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
 }
 
+.ta-image {
+  width: 100%;
+}
+
 .ta-image img {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
+  max-height: 210px;
+  object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(40, 36, 26, 0.15);
   display: block;
@@ -126,7 +132,7 @@ h2 {
 
 .ta-content p {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   line-height: 1.7;
 }
 
