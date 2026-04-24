@@ -140,6 +140,13 @@ h2 {
   margin-top: 6px;
 }
 
+.ta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 @media (max-width: 760px) {
   .page {
     margin: 24px auto;
