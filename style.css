@@ -136,6 +136,10 @@ h2 {
   line-height: 1.7;
 }
 
+.ta-content p + p {
+  margin-top: 6px;
+}
+
 @media (max-width: 760px) {
   .page {
     margin: 24px auto;
